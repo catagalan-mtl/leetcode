@@ -7,11 +7,7 @@ def three_sum(nums)
       r << trio
     end
   end
-  if r.uniq == r
-    r
-  else
-    r = r.uniq!
-  end
+  r.uniq == r ? r : r.uniq!
   p(r)
 end
 
